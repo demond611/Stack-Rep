@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>StackOverflow Reputation Builder</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<link href='main.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	
+	<div class="container-wrap">
+		
+		<header class="header-wrap">		
+			<div class="intro-image">
+				<img src="stackoverflow.jpg" alt="Stackoverflow image">
+			</div>
+			<h1>
+				StackOverflow Reputation Builder
+			</h1>
+			<p class="intro-text">
+				This app lets you search by topic for unanswered questions on Stack Overflow to help you build your reputation. This app is perfect for new users who want to build their reputation on Stack Overflow.
+			</p>
+		</header>	<!-- .header-wrap -->
+
+		<div class="unanswered-wrap">	
+			<h3>
+				Unanswered Question
+			</h3>	
+			<div class="unanswered">
+				<form action="" onsubmit="return false">
+					<input type="text" class="answer-input" placeholder="Get Questions...">
+					<input id="answer-input" type="submit" value="Submit">
+				</form>
+			</div>	
+		</div>	<!-- .unanswered-wrap -->
+
+		<div class="top-answers-wrap">
+			<h3>
+				Top Answerers for a Tag
+			</h3>
+			<div class="top">
+				<form action="" onsubmit="return false">
+					<input type="text" class="top-input" placeholder="Top Answers...">
+					<input id="top-input" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>	<!-- .top-answers-wrap -->
+
+		<div class="responses-wrap">
+			
+		</div>	<!-- .responses-wrap -->
+
+	</div>	<!-- .container-wrap -->
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="//api.stackexchange.com/js/2.0/all.js"></script>
+
+</body>
+</html>

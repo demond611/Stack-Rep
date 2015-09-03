@@ -1,0 +1,31 @@
+/***** MAIN STYLES *****/
+
+/** { border: 2px solid red; }*/
+
+body {
+	font-family: Droid-Sans, Sans;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+}
+
+.container-wrap {
+	width: 60%;
+	min-width: 600px;
+	margin: 3em auto;
+}
+
+.intro-image {
+	float: left;
+	padding-right: 15px;
+}
+
+.unanswered-wrap {
+	clear: both;
+}
+
+.answer-input, .top-input {
+	width:300px;
+}
