@@ -1,60 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>StackOverflow Reputation Builder</title>
-
+	<title>Stack Overflow AJAX Demo</title>
 	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-	<link href='main.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-	
-	<div class="container-wrap">
-		
-		<header class="header-wrap">		
-			<div class="intro-image">
-				<img src="stackoverflow.jpg" alt="Stackoverflow image">
+	<div class="container">
+		<div class="intro">
+			<div class="left stack-image"></div>
+			<div class="explanation">
+				<h1>StackOverflow Reputation Builder</h1>
+				<p>This app lets you search by topic for unanswered questions on Stack Overflow to help you build your reputation.  Find unanswered questions for a topic you know about, write quality answers, and watch your reputation go up.</p>
 			</div>
-			<h1>
-				StackOverflow Reputation Builder
-			</h1>
-			<p class="intro-text">
-				This app lets you search by topic for unanswered questions on Stack Overflow to help you build your reputation. This app is perfect for new users who want to build their reputation on Stack Overflow.
-			</p>
-		</header>	<!-- .header-wrap -->
+		</div>
 
-		<div class="unanswered-wrap">	
-			<h3>
-				Unanswered Question
-			</h3>	
-			<div class="unanswered">
-				<form action="" onsubmit="return false">
-					<input type="text" class="answer-input" placeholder="Get Questions...">
-					<input id="answer-input" type="submit" value="Submit">
-				</form>
-			</div>	
-		</div>	<!-- .unanswered-wrap -->
+		<div class="stack">	
+			<h3>Get Unanswered Questions</h3>
+			<p>Find unanswered questions by tag. For multiple tags, use a semi-colon to separate.</p>
+			<form class="unanswered-getter" onsubmit="return false;">
+				<input type="text" placeholder='e.g., "HTML" or "HTML;CSS"' name="tags" size="30" autofocus required>
+				<input type="submit" value="Submit">
+			</form>
+			<h3>View the Top Answerers for a Tag</h3>
+			<form class="inspiration-getter" onsubmit="return false;">
+				<input type="text" placeholder="e.g., jQuery" name="answerers" size="30"  required>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		<div class="results-container">
+			<div class="search-results"></div>
+			<div class="results">
+		</div>
+	</div>	<!--  .container  -->
 
-		<div class="top-answers-wrap">
-			<h3>
-				Top Answerers for a Tag
-			</h3>
-			<div class="top">
-				<form action="" onsubmit="return false">
-					<input type="text" class="top-input" placeholder="Top Answers...">
-					<input id="top-input" type="submit" value="Submit">
-				</form>
-			</div>
-		</div>	<!-- .top-answers-wrap -->
-
-		<div class="responses-wrap">
-			
-		</div>	<!-- .responses-wrap -->
-
-	</div>	<!-- .container-wrap -->
+	<div class="templates hidden">
+		<dl class="result question">
+			<dt>Question</dt>
+				<dd class="question-text"><a href="" target="_blank"></a></dd>
+			<dt>Asked</dt>
+				<dd class="asked-date"></dd>
+			<dt>Viewed</dt>
+				<dd class="viewed"></dd>
+			<dt>Asker</dt>
+				<dd class="asker"></dd>
+		</dl>
+		<div class="error">
+			<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
+		</div>
+	</div>	<!--  .templates  -->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="//api.stackexchange.com/js/2.0/all.js"></script>
-
+	<script src="stack.js" type="text/javascript"></script>
 </body>
 </html>

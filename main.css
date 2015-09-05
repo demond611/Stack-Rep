@@ -1,31 +1,51 @@
-/***** MAIN STYLES *****/
-
-/** { border: 2px solid red; }*/
-
-body {
-	font-family: Droid-Sans, Sans;
+.container {
+	margin: 3em auto;
+	width: 600px;
+	font-family: "Droid-Sans", Sans-serif;
 }
 
-img {
+.hidden {
+	display: none;
+}
+
+.left {
+	float: left;
+}
+
+.stack-image {
+	background: url('stackoverflow.jpg') no-repeat center center;
 	width: 200px;
 	height: 200px;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-right: 1em;
+  border-radius: 5px;
 }
 
-.container-wrap {
-	width: 60%;
-	min-width: 600px;
-	margin: 3em auto;
+.intro {
+	margin-bottom: 1em;
 }
-
-.intro-image {
-	float: left;
-	padding-right: 15px;
-}
-
-.unanswered-wrap {
+.stack {
 	clear: both;
 }
 
-.answer-input, .top-input {
-	width:300px;
+.inspiration { 
+	margin-left: 3em;
+}
+
+.result {
+	border: 1px solid black;
+	padding: 5px;
+	margin: 0 auto 1em auto;
+}
+
+.error {
+	background-color: #F78181;
+	padding: 1em;
+}
+
+.results-container {
+	margin-top: 3em;
 }
