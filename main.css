@@ -49,3 +49,7 @@
 .results-container {
 	margin-top: 3em;
 }
+
+dd {
+	padding: 5px 0;
+}
